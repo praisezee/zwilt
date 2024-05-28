@@ -165,7 +165,7 @@ const Stacks = () =>
         </article>
         <article className="w-11/12 md:w-5/6 lg:w-5/6 lg:mt-20 px-5 md:px-10 flex flex-col md:flex-row justify-between items-center pb-16 -m-24">
           <div className="w-full md:w-1/2 flex justify-center md:justify-start items-center mb-10 md:mb-0">
-            <div className="flex items-center">
+            <div className="flex items-center mt-14">
               <div className="flex justify-center items-center rounded-full overflow-hidden bg-black h-16 w-16">
                 <img loading="lazy" className="h-5 w-5 lg:h-4 lg:w-4 md:h-4 md:w-4" src={ touchLight } alt="" />
               </div>

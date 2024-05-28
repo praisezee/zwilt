@@ -26,3 +26,31 @@
       background-color: #af7cff; 
       border-radius: 40%;
 }
+
+.animate-slide-down{
+      animation: slide-down 8s alternate;
+      -webkit-animation: slide-down 1s alternate;
+      
+}
+
+@keyframes slide-down {
+      0%{
+            top: 100%;
+            overflow: hidden;
+            transform: translateY(-20%);
+            scroll-behavior: smooth;
+            transition: all 1s ease-out;
+            opacity: 0;
+            z-index: -1;
+      }
+
+      100%{
+            top: 0;
+            overflow: hidden;
+            transform: translateY(0%);
+            scroll-behavior: smooth;
+            transition: all 1s ease-out;
+            opacity: 1;
+            z-index: 1;
+      }
+}

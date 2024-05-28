@@ -1,5 +1,5 @@
 import useMainContext from "../hook/useMainContext";
-import gif from "../assets/image.png"
+import gif from "../assets/image.gif"
 import touch from "../assets/touch.png"
 import hr from "../assets/hr.png"
 

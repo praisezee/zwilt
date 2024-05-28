@@ -58,22 +58,24 @@ const WorkProcess = () =>
             skilled candidates so you can onboard them in a matter of days.
           </p>
           { process.map( item => (
-            <div key={process.indexOf(item)} className="flex flex-col gap-3 mt-1 rounded-sm border border-gray-100 py-2 px-5 cursor-pointer bg-white shadow-lg w-full max-w-[500px]" >
-            <div className="flex items-center gap-3" role="button" onClick={()=>toggle(item)}>
-              <div className={accordionNumber === process.indexOf(item) ? "flex justify-center items-center p-4 rounded-full bg-[#8ba4fd]" : "flex justify-center items-center p-4 rounded-full"} >
-                <img loading="lazy" className="h-3" src={item.img} alt="" />
+            <>
+              <div key={process.indexOf(item)} className="flex flex-col gap-3 mt-1 rounded-sm border border-gray-100 py-2 px-5 cursor-pointer bg-white shadow-lg w-full max-w-[500px] mb-0" >
+              <div className="flex items-center gap-3" role="button" onClick={()=>toggle(item)}>
+                <div className={accordionNumber === process.indexOf(item) ? "flex justify-center items-center p-4 rounded-full bg-[#8ba4fd]" : "flex justify-center items-center p-4 rounded-full"} >
+                  <img loading="lazy" className="h-3" src={item.img} alt="" />
+                </div>
+                <div>
+                  <strong>
+                    Step {item.step}:
+                  </strong>
+                  {item.heading}
+                </div>
               </div>
-              <div>
-                <strong>
-                  Step {item.step}:
-                </strong>
-                {item.heading}
               </div>
-            </div>
-            <div className={accordionNumber === process.indexOf(item) ? "text-xs mt-1" : "hidden"}>
-              {item.body}
-            </div>
-          </div>
+              <div className={accordionNumber === process.indexOf(item) ? "mt-0 text-xs animate-slide-down rounded-sm border border-gray-100 py-2 px-5 cursor-pointer bg-white shadow-lg w-full max-w-[500px]" : "hidden"}>
+                <p>{item.body}</p>
+              </div>
+            </>
           ))}
         </article>
         <article className="w-full md:w-1/2 mt-10 md:mt-0"/>
