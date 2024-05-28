@@ -19,55 +19,55 @@ const Stacks = () =>
   const itStacks = [
     {
       name: "Shopify Developer",
-      img loading="lazy": shopify
+      img: shopify
     },
     {
       name: "Magneto Developer",
-      img loading="lazy": magneto
+      img: magneto
     },
     {
       name: "Data Scientist",
-      img loading="lazy": datascience
+      img: datascience
     },
     {
       name: "Webflow Developer",
-      img loading="lazy": webflow
+      img: webflow
     },
     {
       name: "Dot Net Developer",
-      img loading="lazy": dotnet
+      img: dotnet
     },
     {
       name: "",
-      img loading="lazy": touch
+      img: touch
     }
   ]
 
   const designStack = [
     {
       name: "",
-      img loading="lazy": touch
+      img: touch
     },
     {
       name: "UX designer",
-      img loading="lazy": figma
+      img: figma
     },
     {
       name: "Graphics Designer",
-      img loading="lazy": graphics
+      img: graphics
     },
     {
       name: "Illustration Artist",
-      img loading="lazy": illustrator
+      img: illustrator
     },
     {
       name: "Unreal Engine",
-      img loading="lazy": unreal
+      img: unreal
     }
     ,
     {
       name: "Cinema 4D",
-      img loading="lazy": cinema
+      img: cinema
     }
   ]
   return (
@@ -113,7 +113,7 @@ const Stacks = () =>
               { itStacks.map( stack => (
                 <div key={itStacks.indexOf(stack)} className="flex flex-col items-center">
                   <div className="flex items-center justify-center rounded-full overflow-hidden bg-gray-200 h-20 w-20">
-                    <img loading="lazy" src={stack.img loading="lazy"} alt="" className="h-8 w-8" />
+                    <img loading="lazy" src={stack.img} alt="" className="h-8 w-8" />
                   </div>
                   <p className="text-center text-xs whitespace-normal w-12 mt-2">{ stack.name }</p>
                 </div>
@@ -155,7 +155,7 @@ const Stacks = () =>
               { designStack.map( stack => (
                 <div key={designStack.indexOf(stack)} className="flex flex-col items-center">
                   <div className="flex items-center justify-center rounded-full overflow-hidden bg-gray-200 h-20 w-20">
-                    <img loading="lazy" src={stack.img loading="lazy"} alt="" className={designStack.indexOf(stack) === 0 ? "h-8 w-8 rotate-180" :"h-8 w-8"} />
+                    <img loading="lazy" src={stack.img} alt="" className={designStack.indexOf(stack) === 0 ? "h-8 w-8 rotate-180" :"h-8 w-8"} />
                   </div>
                   <p className="text-center text-xs whitespace-normal w-12 mt-2 ">{ stack.name }</p>
                 </div>
@@ -177,6 +177,8 @@ const Stacks = () =>
           </div>
         </article>
       </article>
+      <br />
+      <br />
     </section>
   )
 }
