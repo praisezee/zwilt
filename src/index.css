@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom{
+      background: #525aa0;
+}
+
+.bg-custom-2{
+      background: #525AA0;
+}
+
+.header{
+      margin-top: 20px;
+}
+
+.input-style{
+      border: 1px solid #fefefe;
+}
+
+.size{
+      max-width: 26rem;
+}
+
+.company-image{
+      background-color: #af7cff; 
+      border-radius: 40%;
+}
