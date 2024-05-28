@@ -10,7 +10,7 @@ const Header = () =>
     <header className="px-10">
       <nav className="header rounded-xl flex justify-between items-center pl-5 pr-2 py-2 text-sm shadow-lg bg-custom">
         <div className="logo">
-          <img src={logo} alt="Logo" width={100} height={100}/>
+          <img loading="lazy" src={logo} alt="Logo" width={100} height={100}/>
         </div>
         <div className="hidden md:flex">
           <ul className="flex gap-5 text-white">

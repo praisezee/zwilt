@@ -14,13 +14,13 @@ const Footer = () => {
               well? Get Started
             </p>
             <div className="flex gap-3 items-center rounded-full overflow-hidden justify-center bg-black h-11 w-11">
-              <img src={touchLight} alt="" className="h-2 w-3 rotate-90" />
+              <img loading="lazy" src={touchLight} alt="" className="h-2 w-3 rotate-90" />
             </div>
           </article>
         </article>
         <article className="flex flex-col md:flex-row gap-8 w-full mx-auto mt-20 text-white">
           <div className="w-full md:w-2/6">
-            <img src={ logo } alt="logo" className="h-8" />
+            <img loading="lazy" src={ logo } alt="logo" className="h-8" />
             <p className="mt-5 text-gray-300">
               We take complex hiring processes - and simplify them. Connecting you to the world’s highly qualified talent pool.
             </p>

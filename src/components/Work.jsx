@@ -13,11 +13,11 @@ const Work = () => {
             <p className="text-3xl md:text-4xl font-bold leading-tight-mb-3">How it worked</p>
             <div className="flex items-center mb-3">
               <span className="mr-2">For Jason</span>
-              <img src={person} alt="avtr" className="mr-2 h-4 w-5 lg:h-10 lg:w-10 md:h-6 md:w-6" />
+              <img loading="lazy" src={person} alt="avtr" className="mr-2 h-4 w-5 lg:h-10 lg:w-10 md:h-6 md:w-6" />
               <span>at</span>
             </div>
             <div>
-              <img src={grove} alt="" className="w-32 md:w-40 lg:w-48 mt-5" />
+              <img loading="lazy" src={grove} alt="" className="w-32 md:w-40 lg:w-48 mt-5" />
             </div>
           </article>
           <p className="mt-5 text-gray-400">
@@ -25,9 +25,9 @@ const Work = () => {
           </p>
           <article className="flex gap-3 items-center mt-8 md:mt-12">
             <div className="flex justify-center items-center rounded-full overflow-hidden bg-white h-12 w-12">
-              <img className="h-4 w-4" src={ touchLeft } alt="" />
+              <img loading="lazy" className="h-4 w-4" src={ touchLeft } alt="" />
             </div>
-            <div className="flex justify-center items-center rounded-full overflow-hidden bg-white h-12 w-12"><img className="h-4 w-4 transform rotate-180" src={touchLeft} alt=""/>
+            <div className="flex justify-center items-center rounded-full overflow-hidden bg-white h-12 w-12"><img loading="lazy" className="h-4 w-4 transform rotate-180" src={touchLeft} alt=""/>
             </div>
           </article>
         </article>
@@ -35,7 +35,7 @@ const Work = () => {
           <article className="mx-auto text-center md:text-left">
             <div className="flex items-center justify-center md:2/3 md:gap-5 md:pl-16 md:justify-start mb-5">
               <div className="company-image py-5 px-2 w-16 h-16 flex justify-center items-center" >
-                <img src={groveLight} alt="" />
+                <img loading="lazy" src={groveLight} alt="" />
               </div>
               <div>
                 <div className="text-white font-bold">

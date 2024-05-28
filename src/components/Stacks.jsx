@@ -19,55 +19,55 @@ const Stacks = () =>
   const itStacks = [
     {
       name: "Shopify Developer",
-      img: shopify
+      img loading="lazy": shopify
     },
     {
       name: "Magneto Developer",
-      img: magneto
+      img loading="lazy": magneto
     },
     {
       name: "Data Scientist",
-      img: datascience
+      img loading="lazy": datascience
     },
     {
       name: "Webflow Developer",
-      img: webflow
+      img loading="lazy": webflow
     },
     {
       name: "Dot Net Developer",
-      img: dotnet
+      img loading="lazy": dotnet
     },
     {
       name: "",
-      img: touch
+      img loading="lazy": touch
     }
   ]
 
   const designStack = [
     {
       name: "",
-      img: touch
+      img loading="lazy": touch
     },
     {
       name: "UX designer",
-      img: figma
+      img loading="lazy": figma
     },
     {
       name: "Graphics Designer",
-      img: graphics
+      img loading="lazy": graphics
     },
     {
       name: "Illustration Artist",
-      img: illustrator
+      img loading="lazy": illustrator
     },
     {
       name: "Unreal Engine",
-      img: unreal
+      img loading="lazy": unreal
     }
     ,
     {
       name: "Cinema 4D",
-      img: cinema
+      img loading="lazy": cinema
     }
   ]
   return (
@@ -89,20 +89,20 @@ const Stacks = () =>
             <div className="flex gap-10 md:gap-20">
               <div className="flex items-center text-xs">
                 <span className="mr-3">
-                  <img className="h-4 w-4" src={skills} alt="Skills for hire" />
+                  <img loading="lazy" className="h-4 w-4" src={skills} alt="Skills for hire" />
                 </span>
                 989 Skills
               </div>
               <div className="flex items-center text-xs">
                 <span className="mr-3">
-                  <img className="h-4 w-4" src={category} alt="Skills for hire" />
+                  <img loading="lazy" className="h-4 w-4" src={category} alt="Skills for hire" />
                 </span>
                 45 Sub-Categories
               </div>
             </div>
             <div className="flex items-center text-xs mt-5">
                 <span className="mr-3">
-                  <img className="h-4 w-4" src={profile} alt="Skills for hire" />
+                  <img loading="lazy" className="h-4 w-4" src={profile} alt="Skills for hire" />
                 </span>
                 3000 Profiles
               </div>
@@ -113,7 +113,7 @@ const Stacks = () =>
               { itStacks.map( stack => (
                 <div key={itStacks.indexOf(stack)} className="flex flex-col items-center">
                   <div className="flex items-center justify-center rounded-full overflow-hidden bg-gray-200 h-20 w-20">
-                    <img src={stack.img} alt="" className="h-8 w-8" />
+                    <img loading="lazy" src={stack.img loading="lazy"} alt="" className="h-8 w-8" />
                   </div>
                   <p className="text-center text-xs whitespace-normal w-12 mt-2">{ stack.name }</p>
                 </div>
@@ -131,20 +131,20 @@ const Stacks = () =>
             <div className="flex gap-10 md:gap-20">
               <div className="flex items-center text-xs">
                 <span className="mr-3">
-                  <img className="h-4 w-4" src={skills} alt="Skills for hire" />
+                  <img loading="lazy" className="h-4 w-4" src={skills} alt="Skills for hire" />
                 </span>
                 989 Skills
               </div>
               <div className="flex items-center text-xs">
                 <span className="mr-3">
-                  <img className="h-4 w-4" src={category} alt="Skills for hire" />
+                  <img loading="lazy" className="h-4 w-4" src={category} alt="Skills for hire" />
                 </span>
                 45 Sub-Categories
               </div>
             </div>
             <div className="flex items-center text-xs mt-5">
                 <span className="mr-3">
-                  <img className="h-4 w-4" src={profile} alt="Skills for hire" />
+                  <img loading="lazy" className="h-4 w-4" src={profile} alt="Skills for hire" />
                 </span>
                 3000 Profiles
               </div>
@@ -155,7 +155,7 @@ const Stacks = () =>
               { designStack.map( stack => (
                 <div key={designStack.indexOf(stack)} className="flex flex-col items-center">
                   <div className="flex items-center justify-center rounded-full overflow-hidden bg-gray-200 h-20 w-20">
-                    <img src={stack.img} alt="" className={designStack.indexOf(stack) === 0 ? "h-8 w-8 rotate-180" :"h-8 w-8"} />
+                    <img loading="lazy" src={stack.img loading="lazy"} alt="" className={designStack.indexOf(stack) === 0 ? "h-8 w-8 rotate-180" :"h-8 w-8"} />
                   </div>
                   <p className="text-center text-xs whitespace-normal w-12 mt-2 ">{ stack.name }</p>
                 </div>
@@ -167,7 +167,7 @@ const Stacks = () =>
           <div className="w-full md:w-1/2 flex justify-center md:justify-start items-center mb-10 md:mb-0">
             <div className="flex items-center">
               <div className="flex justify-center items-center rounded-full overflow-hidden bg-black h-16 w-16">
-                <img className="h-5 w-5 lg:h-4 lg:w-4 md:h-4 md:w-4" src={ touchLight } alt="" />
+                <img loading="lazy" className="h-5 w-5 lg:h-4 lg:w-4 md:h-4 md:w-4" src={ touchLight } alt="" />
               </div>
               <span className="ml-3 font-bold">Explore More</span>
             </div>

@@ -5,31 +5,31 @@ const WorkProcess = () =>
 {
   const process = [
     {
-      img: screening,
+      img loading="lazy": screening,
       step: 1,
       heading: "Resume Screening",
       body: "We thoroughly review each candidate's resume to ensure they meet our high standards."
     },
     {
-      img: screening,
+      img loading="lazy": screening,
       step: 2,
       heading: "Technical Interview",
       body: "Candidates undergo a rigorous technical interview to assess their skills and expertise."
     },
     {
-      img: screening,
+      img loading="lazy": screening,
       step: 3,
       heading: "HR Interview",
       body: "Our HR team conducts interviews to evaluate candidates' cultural fit and soft skills."
     },
     {
-      img: screening,
+      img loading="lazy": screening,
       step: 4,
       heading: "Final Approval",
       body: "Candidates are reviewed and approved by our senior management team."
     },
     {
-      img: screening,
+      img loading="lazy": screening,
       step: 5,
       heading: "Onboarding",
       body: "We provide a comprehensive onboarding process to help new hires integrate smoothly."
@@ -61,7 +61,7 @@ const WorkProcess = () =>
             <div key={process.indexOf(item)} className="flex flex-col gap-3 mt-1 rounded-sm border border-gray-100 py-2 px-5 cursor-pointer bg-white shadow-lg w-full max-w-[500px]" >
             <div className="flex items-center gap-3" role="button" onClick={()=>toggle(item)}>
               <div className={accordionNumber === process.indexOf(item) ? "flex justify-center items-center p-4 rounded-full bg-[#8ba4fd]" : "flex justify-center items-center p-4 rounded-full"} >
-                <img className="h-3" src={item.img} alt="" />
+                <img loading="lazy" className="h-3" src={item.img loading="lazy"} alt="" />
               </div>
               <div>
                 <strong>

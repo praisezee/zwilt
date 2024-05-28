@@ -12,7 +12,7 @@ const Hero = () =>
         <div className="mb-4 text-center">
           <h1 className="text-2xl md:text-4xl font-bold">
             Find the right fit
-            <img src={ gif } alt="avtr" className="inline-block h-5 w-8 lg:h-10 lg:w-16 md:w-10 md:h-6"/>
+            <img loading="lazy" src={ gif } alt="avtr" className="inline-block h-5 w-8 lg:h-10 lg:w-16 md:w-10 md:h-6"/>
             has
             <br />
             never been easier.
@@ -27,7 +27,7 @@ const Hero = () =>
             <span className="font-bold">Looking for</span> design |
           </div>
             <button className="absolute right-0 text-white p-2 rounded-md flex items-center justify-center h-10 px-3 bg-yellow-500" /* style="background-color: rgb(255, 190, 46);" */>
-            <img src={touch} alt="Search Icon" height="15" width="15"/>
+            <img loading="lazy" src={touch} alt="Search Icon" height="15" width="15"/>
             </button>
         </div>
       </article>
@@ -83,7 +83,7 @@ const Hero = () =>
           )}
         </article>
       </article>
-      <img src={hr} alt="Horizontal rule" className="mt-20"/>
+      <img loading="lazy" src={hr} alt="Horizontal rule" className="mt-20"/>
     </section>
   )
 }

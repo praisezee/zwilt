@@ -28,19 +28,19 @@ const Choice = () =>
           <div className="flex flex-col gap-2 mt-4 text-sm">
             { points.map( point => (
               <div key={points.indexOf(point)} className="flex gap-2 items-center">
-                <img className="w-4 h-2" src={bullet} alt="bullet point" />
+                <img loading="lazy" className="w-4 h-2" src={bullet} alt="bullet point" />
                 <span>{ point }</span>
               </div>
               ))}
           </div>
           <div className="flex gap-3 items-center mt-5">
             <div className="flex justify-center items-center rounded-full overflow-hidden bg-black h-10 w-10">
-              <img className="h-4 w-4" src={touchLight} alt="favicon" />
+              <img loading="lazy" className="h-4 w-4" src={touchLight} alt="favicon" />
             </div>
             <span className="font-bold text-sm">Join Now</span>
           </div>
         </div>
-        <img className="h-48 lg:h-96 mt-4 lg:mt-0" src={choice} alt="Onboard without risk" />
+        <img loading="lazy" className="h-48 lg:h-96 mt-4 lg:mt-0" src={choice} alt="Onboard without risk" />
       </div>
     </section>
   )
